@@ -119,25 +119,25 @@
         .card-body {
             display: flex;
             gap: 15px;
-            align-items: center;
-            margin-bottom: 6px; /* Менша відстань до бігучої стрічки */
+            align-items: flex-start; /* Вирівнювання по верхньому краю */
+            margin-bottom: 6px;
         }
         .card-photo {
             flex-shrink: 0;
         }
         .card-photo img {
-            width: 135px; /* Більша фотографія, яка відсуває текст до правого краю */
-            aspect-ratio: 9 / 16; /* Витримуємо потрібне співвідношення */
+            width: 135px;
+            aspect-ratio: 9 / 16;
             object-fit: cover;
             border-radius: 12px;
             display: block;
-            border: none; /* Без рамок */
+            border: none;
         }
         .card-info {
             display: flex;
             flex-direction: column;
             gap: 15px;
-            flex-grow: 1; /* Текст займає весь вільний простір, що залишився */
+            flex-grow: 1;
         }
         .card-info .data-row {
             margin-bottom: 0;
@@ -338,6 +338,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="marquee-wrapper">
                                 <div class="marquee-content">
                                     &bull; Документ оновлено о <span class="time-now"></span> &bull; На обліку &bull; Документ оновлено о <span class="time-now"></span> &bull; На обліку &bull; Документ оновлено о <span class="time-now"></span> &bull; На обліку &nbsp;
